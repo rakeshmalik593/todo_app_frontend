@@ -121,9 +121,9 @@ export default class CustomModal extends Component {
               )}
             </FormGroup>
 
-            <FormGroup className="radio-buttons">
-              <Label for="priority">Priority</Label>
-              <div className="ml-80">
+            <FormGroup >
+              <Label  for="priority">Priority</Label>
+              <div className="ml-8">
                 <Label check>
                   <Input
                     type="radio"
@@ -131,13 +131,13 @@ export default class CustomModal extends Component {
                     value={1}
                     checked={this.state.activeItem.priority === 1}
                     onChange={this.handleChange}
-                  />{" "}
+                  />
                   <span style={{ color: "green" }}>Low</span>
                 </Label>
               </div>
               <div className="ml-8">
                 <Label check>
-                  <Input
+                  <Input className="ml-4"
                     type="radio"
                     name="priority"
                     value={2}
